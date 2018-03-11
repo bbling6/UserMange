@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.dbb.view.LoginServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>LoginClServlet</servlet-name>
+  <servlet-class>com.dbb.controller.LoginClServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>MainFrame</servlet-name>
+  <servlet-class>com.dbb.view.MainFrame</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>ManagerUser</servlet-name>
+  <servlet-class>com.dbb.view.ManagerUser</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>UpdaUserServlet</servlet-name>
+  <servlet-class>com.dbb.view.UpdaUserServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>UserClServlet</servlet-name>
+  <servlet-class>com.dbb.controller.UserClServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>OkServlet</servlet-name>
+  <servlet-class>com.dbb.view.OkServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>ErrServlet</servlet-name>
+  <servlet-class>com.dbb.view.ErrServlet</servlet-class>
+ </servlet>
+  <servlet>
+  <servlet-name>AddUserServlet</servlet-name>
+  <servlet-class>com.dbb.view.AddUserServlet</servlet-class>
+ </servlet>
+  <servlet>
+  <servlet-name>CreateCode</servlet-name>
+  <servlet-class>com.dbb.util.CreateCode</servlet-class>
+ </servlet>
+  <servlet>
+  <servlet-name>FindUserServlet</servlet-name>
+  <servlet-class>com.dbb.view.FindUserServlet</servlet-class>
+ </servlet>
+  <servlet>
+	  <servlet-name>InitServlet</servlet-name>
+	  <servlet-class>com.dbb.init.InitServlet</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>InitServlet</servlet-name>
+  <url-pattern>/InitServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>FindUserServlet</servlet-name>
+  <url-pattern>/FindUserServlet</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>CreateCode</servlet-name>
+  <url-pattern>/CreateCode</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>LoginClServlet</servlet-name>
+  <url-pattern>/LoginClServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>MainFrame</servlet-name>
+  <url-pattern>/MainFrame</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ManagerUser</servlet-name>
+  <url-pattern>/ManagerUser</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>AddUserServlet</servlet-name>
+  <url-pattern>/AddUserServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UpdaUserServlet</servlet-name>
+  <url-pattern>/UpdaUserServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UserClServlet</servlet-name>
+  <url-pattern>/UserClServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>OkServlet</servlet-name>
+  <url-pattern>/OkServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ErrServlet</servlet-name>
+  <url-pattern>/ErrServlet</url-pattern>
+ </servlet-mapping>
+ <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+ 
+</web-app>
